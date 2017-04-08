@@ -1,3 +1,15 @@
 <div>
-  <h1>Welcome to Glimmer!</h1>
+  <h1>
+    Your Weather
+  </h1>
+
+  {{#if locationPending}}
+    Fetching Location...
+  {{else}}
+    {{#if locationFailed}}
+      Sorry. We couldn't establish your location
+    {{else}}
+      <city-report @report={{report}} />
+    {{/if}}
+  {{/if}}
 </div>
