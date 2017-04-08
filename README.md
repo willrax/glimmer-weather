@@ -2,28 +2,14 @@
 
 A small Glimmer application to fetch your current location and display the daily summary.
 
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Yarn](https://yarnpkg.com/en/)
-* [Ember CLI](https://ember-cli.com/)
-
 ## Installation
 
 * `git clone git@github.com:willrax/glimmer-weather.git`
 * `cd weather`
 * `yarn`
-
-## Running / Development
-
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Fetching the Report
+## Fetching the Report
 
 This app assumes that you're using the [Darksky](https://darksky.net/dev/) API. You'll also need to proxy these requets due to CORS. Here's a small Node app that can do it.j
 
